@@ -72,7 +72,7 @@ main {
   position: absolute;
   top: 1em;
   left: 1em;
-  width: 10em;
+  width: 40%;
   border-radius: .25em;
   padding: .75em;
   background: #666;
@@ -105,7 +105,7 @@ main {
 }
 
 .projects ul li:nth-child(1){
-  margin-right: 3%;
+  margin-right: 4.9%;
 }
 
 .projects ul li:nth-child(3){
