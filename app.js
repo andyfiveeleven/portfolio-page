@@ -9,3 +9,7 @@ function Project (name, dateFin, tools, url, gitHub, colabs, about){
   this.colabs = colabs;
   this.about = about;
 }
+
+$('.icon-menu').click(function(){
+  $('.menu').css('display:block');
+});
