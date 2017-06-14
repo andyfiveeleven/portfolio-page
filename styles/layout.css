@@ -1,12 +1,12 @@
+
+
 .icon-menu {
   float: right;
-  height: 2em;
-  width: 2em;
-  margin: .5em .5em;
-  background: black;
+  margin: .25em .5em;
+  color: white;
+  font-size: 2em;
 }
 
-/*will include a toggled class called display-nav with jquery*/
 
 .menu {
   display: none;
