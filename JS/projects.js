@@ -13,10 +13,10 @@ function Project (projObj) {
 }
 
 Project.prototype.toHtml = function() {
-  var $newProject = $('.template').clone();
+  var $newProject = $('article.template').clone();
   $newProject.removeClass('template');
-  $newProject.find('h3').html(this.name);
-  $newProject.append('<hr>');
+
+  $newProject.find('h1').html(this.name);
   console.log($newProject);
   return $newProject;
 };
@@ -27,5 +27,5 @@ rawProject.forEach(function(projectObject){
 console.log(projects);
 
 projects.forEach(function(project){
-  $('.pro-list').append(project.toHtml());
+  $('#project_block').append(project.toHtml());
 });

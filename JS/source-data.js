@@ -8,7 +8,7 @@ var rawProject = [
     path: 'www.gitHub.com',
     gitPath:'www.gitHub.com',
     collabs: ['Nickypoo'],
-    about:'Salmon Cookies',
+    about:'Salmon Cookies'
   },
   {
     name: 'Chocolate Pizza',
@@ -17,7 +17,7 @@ var rawProject = [
     path:'www.gitHub.com',
     gitPath:'www.gitHub.com',
     collabs:['Nickypoo'],
-    about: 'Chocolate Pizza',
+    about: 'Chocolate Pizza'
   },
   {
     name: 'Mix it Up',
@@ -26,6 +26,6 @@ var rawProject = [
     path:'www.gitHub.com',
     gitPath:'www.gitHub.com',
     collabs:['Matty', 'Marky', 'Chrissy'],
-    about: 'User selects the liquor they have, we output a drink!',
+    about: 'User selects the liquor they have, we output a drink!'
   }
 ];
