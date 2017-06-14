@@ -11,5 +11,11 @@ function Project (name, dateFin, tools, url, gitHub, colabs, about){
 }
 
 $('.icon-menu').click(function(){
-  $('.menu').css('display:block');
+  $('.main-nav ul').toggleClass('menu');
+  $('.main-nav ul').toggleClass('display-nav');
+});
+
+$('.main-nav ul').click(function(){
+  $('.main-nav ul').toggleClass('menu');
+  $('.main-nav ul').toggleClass('display-nav');
 });

@@ -10,6 +10,10 @@
 
 .menu {
   display: none;
+}
+
+.display-nav{
+  display: block;
   position: fixed;
   background: black;
   opacity: .75;
