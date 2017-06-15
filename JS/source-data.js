@@ -8,7 +8,7 @@ var rawProject = [
     path: 'www.gitHub.com',
     gitPath:'www.gitHub.com',
     collabs: ['Nickypoo'],
-    about:'Salmon Cookies'
+    about:'Salmon Cookies',
   },
   {
     name: 'Chocolate Pizza',

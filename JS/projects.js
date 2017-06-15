@@ -17,6 +17,7 @@ Project.prototype.toHtml = function() {
   $newProject.removeClass('template');
 
   $newProject.find('h1').html(this.name);
+  $newProject.find('p').html(this.about);
   console.log($newProject);
   return $newProject;
 };
