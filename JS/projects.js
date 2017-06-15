@@ -29,3 +29,15 @@ console.log(projects);
 projects.forEach(function(project){
   $('#project_block').append(project.toHtml());
 });
+
+var handleMainNav = function(){
+  $('main-nav ul').on('click', 'li', function(){
+    var $dynaNav = $(this).data('content');
+    $('.tab-content').hide();
+    $('#' + $dynaNav).show();
+  });
+
+  $('.main-nav .tab:first').click();
+};
+
+handleMainNav();
