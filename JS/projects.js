@@ -17,6 +17,7 @@ Project.prototype.toHtml = function() {
   $newProject.removeClass('template');
 
   $newProject.find('h1').html(this.name);
+  $newProject.find('p').html(this.about);
   console.log($newProject);
   return $newProject;
 };
@@ -29,15 +30,3 @@ console.log(projects);
 projects.forEach(function(project){
   $('#project_block').append(project.toHtml());
 });
-
-var handleMainNav = function(){
-  $('main-nav ul').on('click', 'li', function(){
-    var $dynaNav = $(this).data('content');
-    $('.tab-content').hide();
-    $('#' + $dynaNav).show();
-  });
-
-  $('.main-nav .tab:first').click();
-};
-
-handleMainNav();
