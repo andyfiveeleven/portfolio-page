@@ -9,7 +9,14 @@
   font-size: 9vw;
   margin-right: 3vw;
   margin-top: 5vw;
-  z-index: 10000;
+  z-index: 1000;
+}
+
+.fixed {
+  position: fixed;
+  z-index: 1000;
+  right: 0;
+  top: 0;
 }
 
 .menu {
@@ -18,11 +25,13 @@
 }
 
 .display-nav{
+  position: fixed;
+  z-index: 99;
   width: 100%;
-  background: rgba(0, 0, 0, 0.85);
+  background: black;
   margin-top: -14vw;
   height: 100vh;
-  padding-top: 20vw;
+  padding-top: 30vw;
 }
 
 
@@ -35,6 +44,10 @@
   border: 1px solid white;
   padding: 5vw 0;
 }
+/*
+.menu {
+  margin-top: 14vw;
+}*/
 
 .hero {
   position: relative;
@@ -48,7 +61,7 @@
   border-radius: .25em;
   padding: .75em;
   background: #666;
-  opacity: .75;
+  /*opacity: .75;*/
   color: white;
 }
 
