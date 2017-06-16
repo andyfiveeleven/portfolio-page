@@ -8,6 +8,10 @@ a {
   clear: both;
 }
 
+* {
+  font-family: helvetica;
+}
+
 /*selector styles*/
 
 .main-head {
@@ -16,12 +20,13 @@ a {
   height: 20vw;
   background: #444;
   color: #89cff0;
+  font-family: 'Bubbler One', sans-serif;
 }
 
 .main-head h1 {
   float: left;
-  width: 38vw;
-  margin-left: 2vw;
+  width: 37vw;
+  margin-left: 3vw;
   margin-top: 1vw;
   font-size: 9vw;
 }
@@ -32,12 +37,6 @@ a {
   margin-top: -1vw;
   border-radius: 100%;
   border: 1.5vw solid white;
-}
-
-
-
-main {
-  padding-top: 20vw;
 }
 
 .hero img {

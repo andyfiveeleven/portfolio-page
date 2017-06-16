@@ -10,6 +10,7 @@ function Project (projObj) {
   this.gitPath = projObj.gitHub;
   this.collabs = projObj.collabs;
   this.about = projObj.about;
+  this.shortAbout = projObj.shortAbout;
 }
 
 Project.prototype.toHtml = function() {
@@ -17,7 +18,8 @@ Project.prototype.toHtml = function() {
   $newProject.removeClass('template');
 
   $newProject.find('h1').html(this.name);
-  $newProject.find('p').html(this.about);
+  $newProject.find('h3').html('Tools used:' + this.tools);
+  $newProject.find('p').html(this.shortAbout);
   console.log($newProject);
   return $newProject;
 };
@@ -28,5 +30,5 @@ rawProject.forEach(function(projectObject){
 console.log(projects);
 
 projects.forEach(function(project){
-  $('#project_block').append(project.toHtml());
+  $('#projects').append(project.toHtml());
 });
