@@ -17,6 +17,7 @@
   z-index: 1000;
   right: 0;
   top: 0;
+  padding-bottom: 40vw;
 }
 
 .menu {
@@ -26,12 +27,12 @@
 
 .display-nav{
   position: fixed;
+  top: 20vw;
   z-index: 99;
   width: 100%;
-  background: black;
-  margin-top: -14vw;
+  background: #444;
   height: 100vh;
-  padding-top: 30vw;
+  /*margin-top: 20vw;*/
 }
 
 
