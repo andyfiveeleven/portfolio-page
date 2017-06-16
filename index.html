@@ -9,6 +9,16 @@
     <link rel="stylesheet" href="styles/modules.css">
     <link rel="stylesheet" href="styles/layout.css">
     <title></title>
+
+    <script id="project-template" type="text/x-handlebars-template">
+        <article class="project-display">
+          <header class="proj-head">
+            <h1>{{name}}</h1>
+            <p>{{about}}</p>
+          </header>
+        </article>
+    </script>
+    
   </head>
   <body>
     <header>
@@ -43,12 +53,6 @@
 
       <section class="tab-content" id="projects">
         <section id="project_block">
-          <article class="template project-display">
-            <header class="proj-head">
-              <h1></h1>
-              <p></p>
-            </header>
-          </article>
         </section>
       </section>
 
@@ -84,6 +88,7 @@
       <a href="https://www.linkedin.com/in/andy-w-martin/"><span class="icon-linkedin2"></span></a>
     </footer>
     <script type="text/javascript" src="JS/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
     <script type="text/javascript" src="JS/source-data.js"></script>
     <script type="text/javascript" src="JS/projects.js"></script>
     <script type="text/javascript" src="JS/view.js"></script>

@@ -13,13 +13,11 @@ function Project (projObj) {
 }
 
 Project.prototype.toHtml = function() {
-  var $newProject = $('article.template').clone();
-  $newProject.removeClass('template');
+  var template = $('#project-template').html();
 
-  $newProject.find('h1').html(this.name);
-  $newProject.find('p').html(this.about);
-  console.log($newProject);
-  return $newProject;
+  var templateRender = Handlebars.compile(template);
+
+  return templateRender(this);
 };
 
 rawProject.forEach(function(projectObject){
