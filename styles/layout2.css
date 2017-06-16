@@ -49,6 +49,10 @@
   margin-top: 14vw;
 }*/
 
+main {
+  max-width: 960px;
+}
+
 .hero {
   position: relative;
 }
@@ -75,8 +79,8 @@
   margin-top: 30px;
 }
 
-.projects h2 {
-  font-size: 6vw;
+h2 {
+  font-size: 10vw;
   margin-bottom: 20px;
   padding-top: 20px;
   border-top: 2px solid #444;
@@ -92,18 +96,41 @@
 
 .projects article:nth-child(even) {
   background: white;
-  color: #444
+  color: #444;
 }
 
 .projects article h1{
   margin: 2vw 0 1vw 0;
-  font-size: 5vw;
-}
-
-.projects article h3 {
-  font-size: 3vw;
+  font-size: 6vw;
 }
 
 .template{
   display: none;
+}
+
+.main-skills {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.main-skills li{
+  display: inline-block;
+  width: 40vw;
+  border-radius: 4px;
+  margin-bottom: 4px;
+  font-size: 7vw;
+  padding: 10vw 0;
+  background-color: #444;
+  color: white;
+}
+
+.main-about {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.main-about p {
+  padding: 5vw;
 }
