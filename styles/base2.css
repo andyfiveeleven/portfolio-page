@@ -9,7 +9,7 @@ a {
 }
 
 * {
-  font-family: helvetica;
+  font-family: 'Bubbler One', sans-serif;
 }
 
 /*selector styles*/
@@ -44,9 +44,17 @@ a {
   height: 20vw;
 }
 
+.hero {
+  font-family: 'Bubbler One', sans-serif;
+}
+
 .hero img {
   width: 100%;
   max-width: 960px;
+}
+
+h2{
+    font-family: 'Muli', sans-serif;
 }
 
 footer{
