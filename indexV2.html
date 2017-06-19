@@ -10,6 +10,24 @@
   <link rel="stylesheet" href="styles/modules2.css">
   <link href="https://fonts.googleapis.com/css?family=Bubbler+One|Muli" rel="stylesheet">
   <title></title>
+
+  <script id="project_template" type="text/x-handlebars-template">
+    <article class="project-display">
+      <header class="proj-head">
+        <!-- <span class="open-close"></span> ZZZ for the open and close, research with jQuery expand-->
+        <h1>{{name}}</h1> <!-- name-->
+        <h3>{{tools}}</h3> <!-- tools -->
+        <p class="short-descrip">{{shortAbout}}</p> <!--short descrip, add to scaffold -->
+      </header>
+      <!-- <article class="proj-main">
+        <p class="descrip">{{about}}</p>
+        <p class="colabs">{{colabs}}</p>
+        <p class="date">{{date}}</p>
+        <p class="gitHub">{{gitPath}}</p>
+      </article -->
+
+    </article>
+  </script>
 </head>
   <body>
     <header class="main-head">
@@ -39,22 +57,8 @@
         </div>
       </section>
 
-      <section class="tab-content projects" id="projects"> <!--- remember to change the js/project.js project_block to projects -->
+      <section class="tab-content projects" id="projects">
         <h2>Projects!</h2>
-        <article class="template project-display">
-          <header class="proj-head">
-            <!-- <span class="open-close"></span> ZZZ for the open and close, research with jQuery expand-->
-            <h1></h1> <!-- name-->
-            <h3></h3> <!-- tools -->
-            <p class="short-descrip"></p> <!--short descrip, add to scaffold -->
-          </header>
-          <!--
-          <p class="descrip"></p> long descrip
-          <p class="colabs"></p>
-          <p class="date"></p>
-          <p class="gitHub"></p>
-          -->
-        </article>
       </section>
 
       <section class="tab-content main-skills" id="skills">
@@ -80,6 +84,7 @@
     </footer>
 
     <script type="text/javascript" src="JS/jquery.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
     <script type="text/javascript" src="JS/source-data.js"></script>
     <script type="text/javascript" src="JS/projects.js"></script>
     <script type="text/javascript" src="JS/view.js"></script>

@@ -95,7 +95,7 @@ h2 {
   color: white;
 }
 
-.projects article:nth-child(even) {
+.projects article:nth-child(odd) {
   background: white;
   color: #444;
 }

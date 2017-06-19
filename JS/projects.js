@@ -14,21 +14,18 @@ function Project (projObj) {
 }
 
 Project.prototype.toHtml = function() {
-  var $newProject = $('article.template').clone();
-  $newProject.removeClass('template');
+  var template = $('#project_template').html();
 
-  $newProject.find('h1').html(this.name);
-  $newProject.find('h3').html('Tools used:' + this.tools);
-  $newProject.find('p').html(this.shortAbout);
-  console.log($newProject);
-  return $newProject;
-};
+  var templateRender = Handlebars.compile(template);
+
+  return templateRender(this);
+}
 
 rawProject.forEach(function(projectObject){
   projects.push(new Project(projectObject));
 });
 console.log(projects);
 
-projects.forEach(function(project){
-  $('#projects').append(project.toHtml());
+projects.forEach(function(p){
+  $('#projects').append(p.toHtml());
 });
