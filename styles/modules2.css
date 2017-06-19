@@ -33,12 +33,28 @@
     padding: 5px 20px;
     margin-top: 65px;
   }
-}
 
-.head-bound {
-  margin: 0 auto;
-}
+  .head-bound {
+    margin: 0 auto;
+  }
 
-main {
-  margin: 30px auto;
+  main {
+    margin: 30px auto;
+  }
+
+  h2 {
+    font-size: 64px;
+  }
+
+  .proj-head h1 {
+    font-size: 38.4px;
+  }
+/*
+  .projects-display {
+    display: inline-block;
+    width: 30%;
+    margin-right:
+  }*/
+
+
 }
