@@ -70,12 +70,12 @@
     margin: 10px 0 5px 0;
     font-size: 45px;
   }
-/*
-  .projects-display {
-    display: inline-block;
-    width: 30%;
-    margin-right:
-  }*/
 
+  .main-skills li {
+    width: 15%;
+    font-size: 40px;
+    margin: 0px 10px;
+    padding: 75px 20px;
+  }
 
 }
