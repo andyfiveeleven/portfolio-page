@@ -14,12 +14,15 @@ function Project (projObj) {
 }
 
 Project.prototype.toHtml = function() {
+
   var template = $('#project_template').html();
+
 
   var templateRender = Handlebars.compile(template);
 
   return templateRender(this);
-}
+
+};
 
 rawProject.forEach(function(projectObject){
   projects.push(new Project(projectObject));
