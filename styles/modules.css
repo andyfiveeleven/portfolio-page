@@ -46,8 +46,29 @@
     font-size: 64px;
   }
 
+
   .proj-head h1 {
     font-size: 38.4px;
+  }
+
+  .projects article {
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    padding: 10px 10px;
+    margin-right: 10px;
+    background: #444;
+    color: white;
+  }
+
+  .projects article:nth-child(odd) {
+    background: #444;
+    color: white;
+  }
+
+  .projects article h1{
+    margin: 10px 0 5px 0;
+    font-size: 45px;
   }
 /*
   .projects-display {
