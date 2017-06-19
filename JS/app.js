@@ -3,9 +3,15 @@
 $('.icon-menu').click(function(){
   $('.main-nav ul').toggleClass('menu');
   $('.main-nav ul').toggleClass('display-nav');
+  $('.icon-menu').toggleClass('fixed');
 });
 
-$('.main-nav ul').click(function(){
-  $('.main-nav ul').toggleClass('menu');
-  $('.main-nav ul').toggleClass('display-nav');
+$('.main-nav ul li').click(function(){
+  $('.main-nav ul').addClass('menu');
+  $('.main-nav ul').removeClass('display-nav');
 });
+
+// 
+// $('.proj-head').on('click', function(){
+//   $(this.proj-main).slideToggle();
+// });
