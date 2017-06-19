@@ -10,14 +10,18 @@ function Project (projObj) {
   this.gitPath = projObj.gitHub;
   this.collabs = projObj.collabs;
   this.about = projObj.about;
+  this.shortAbout = projObj.shortAbout;
 }
 
 Project.prototype.toHtml = function() {
-  var template = $('#project-template').html();
+
+  var template = $('#project_template').html();
+
 
   var templateRender = Handlebars.compile(template);
 
   return templateRender(this);
+
 };
 
 rawProject.forEach(function(projectObject){
@@ -25,6 +29,6 @@ rawProject.forEach(function(projectObject){
 });
 console.log(projects);
 
-projects.forEach(function(project){
-  $('#project_block').append(project.toHtml());
+projects.forEach(function(p){
+  $('#projects').append(p.toHtml());
 });

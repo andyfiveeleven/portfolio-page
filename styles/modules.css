@@ -1,64 +1,60 @@
 @media only screen and (min-width: 640px) {
-  h1 {
-    width: 20%
+  .main-head {
+    height: 130px;
   }
 
+  .main-head h1{
+    position: absolute;
+    left: 90px;
+    font-size: 57px;
+    width: 150px;
+  }
+
+  .main-head img {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 100px;
+    border-width: 5px;
+  }
   .icon-menu {
     display: none;
   }
 
-  .main-nav {
-    position: relative;
+  .menu{
+    display: inline-block;
   }
 
-  .main-nav ul{
-    display: inline;
-    background: none;
-    width: 70%;
-    height: 3em;
-    padding-top: 2em;
-    padding-bottom: 0;
-    position: inherit;
-  }
-
-  .menu {
-    width: 80%;
+  .menu li a {
     float: right;
     text-align: right;
-  }
-
-  .menu li {
-    float: right;
     color: #89cff0;
+    font-size: 30px;
+    padding: 5px 20px;
+    margin-top: 65px;
   }
 
-  .menu li.tab {
-    width: 20%;
+  .head-bound {
+    margin: 0 auto;
   }
 
-  .menu li.home{
-    width: 20%;
+  main {
+    margin: 30px auto;
   }
 
-  .menu li.home a {
-    color: #89cff0;
+  h2 {
+    font-size: 64px;
   }
 
-  .projects ul li {
-    width: 30%;
-    height: 0;
+  .proj-head h1 {
+    font-size: 38.4px;
   }
-
-  .projects ul li:nth-child(1){
-    margin-right: 4%;
-  }
-
-  .projects ul li:nth-child(2){
-    margin-right: 4%;
-  }
-
-  .projects ul li:nth-child(3){
+/*
+  .projects-display {
     display: inline-block;
+    width: 30%;
+    margin-right:
+  }*/
 
-  }
+
 }

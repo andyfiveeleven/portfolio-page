@@ -4,28 +4,31 @@ var rawProject = [
   {
     name: 'Salmon Cookies',
     date: 'May 2017',
-    tools: ['HTML','CSS', 'javascript'],
+    tools: 'HTML and CSS',
     path: 'www.gitHub.com',
     gitPath:'www.gitHub.com',
     collabs: ['Nickypoo'],
     about:'Salmon Cookies',
+    shortAbout: 'A Short description of Salmon Cookies!'
   },
   {
     name: 'Chocolate Pizza',
     date: 'May 2017',
-    tools: ['HTML','CSS', 'javascript'],
+    tools: 'HTML, CSS and JavaScript',
     path:'www.gitHub.com',
     gitPath:'www.gitHub.com',
     collabs:['Nickypoo'],
-    about: 'Chocolate Pizza'
+    about: 'Chocolate Pizza',
+    shortAbout: 'A Short description of Chocolate Pizza!'
   },
   {
     name: 'Mix it Up',
     date: 'May 2017',
-    tools: ['HTML','CSS', 'javascript'],
+    tools: 'HTML, CSS and Javascript',
     path:'www.gitHub.com',
     gitPath:'www.gitHub.com',
     collabs:['Matty', 'Marky', 'Chrissy'],
-    about: 'User selects the liquor they have, we output a drink!'
+    about: 'User selects the liquor they have, we output a drink!',
+    shortAbout: 'A Short description of Mix It Up!'
   }
 ];
