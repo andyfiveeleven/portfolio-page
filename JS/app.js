@@ -11,7 +11,19 @@ $('.main-nav ul li').click(function(){
   $('.main-nav ul').removeClass('display-nav');
 });
 
-//
-// $('.proj-head').on('click', function(){
-//   $(this.proj-main).slideToggle();
-// });
+
+$('.project-display').not('.active').on('click', function(){
+  $('.active').removeClass('active');
+  $('.plus-rotate').removeClass('plus-rotate');
+  $(this).addClass('active');
+  $(this).children('.plus').addClass('plus-rotate');
+  // $('.active p').addClass('display');
+});
+
+$('.project-display').not('.active').on('click', function(){
+  alert('hi');
+});
+
+$('.active').on('click', function(){
+  $('.active').removeClass('active');
+});
