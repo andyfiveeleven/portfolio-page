@@ -14,15 +14,12 @@ $('.main-nav ul li').click(function(){
 
 $('.project-display').on('click', function(){
   $('.active').removeClass('active');
-  $('.plus-rotate').removeClass('plus-rotate');
-  $(this).not('.active').addClass('active');
+  $(this).addClass('active');
   $(this).children('.plus').addClass('plus-rotate');
 });
 
-$('.active').on('click', function(){
-  alert('active');
-});
 
-// $('.active').on('click', function(){
-//   $('.active').removeClass('active');
-// });
+
+$('.active').on('click', function(){
+  $(this).removeClass('active');
+});
