@@ -17,10 +17,9 @@ Project.prototype.toHtml = function() {
 
   var template = $('#project_template').html();
 
-
   var templateRender = Handlebars.compile(template);
-
   return templateRender(this);
+
 
 };
 
