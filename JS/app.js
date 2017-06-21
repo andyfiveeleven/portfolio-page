@@ -12,18 +12,17 @@ $('.main-nav ul li').click(function(){
 });
 
 
-$('.project-display').not('.active').on('click', function(){
+$('.project-display').on('click', function(){
   $('.active').removeClass('active');
   $('.plus-rotate').removeClass('plus-rotate');
-  $(this).addClass('active');
+  $(this).not('.active').addClass('active');
   $(this).children('.plus').addClass('plus-rotate');
-  // $('.active p').addClass('display');
-});
-
-$('.project-display').not('.active').on('click', function(){
-  alert('hi');
 });
 
 $('.active').on('click', function(){
-  $('.active').removeClass('active');
+  alert('active');
 });
+
+// $('.active').on('click', function(){
+//   $('.active').removeClass('active');
+// });
