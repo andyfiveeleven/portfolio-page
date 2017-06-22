@@ -15,20 +15,15 @@
   <div class="clearfix"></div>
 
   <script id="project_template" type="text/x-handlebars-template">
-    <article class="project-display">
-      <span></span>
-      <span class="plus"></span>
-      <h1>{{name}}</h1> <!-- name-->
-      <h3>{{tools}}</h3> <!-- tools -->
-      <h4 class="short-descrip">{{shortAbout}}</h4> <!--short descrip, add to scaffold -->
-      <div class="shown">
-        <p class="descrip">{{about}}</p>
-        <p class="colabs">{{colabs}}</p>
-        <p class="date">{{date}}</p>
-        <p class="gitHub">{{gitPath}}</p>
-      </div>
-
-    </article>
+    <li>
+      <h3>{{name}}</h3>
+      <ul>
+        <li><a href="#">{{date}}</a></li>
+        <li><a href="#">{{collabs}}</a></li>
+        <li><a href="#">{{about}}</a></li>
+        <li><a href="#">{{gitPath}}</a></li>
+      </ul>
+    </li>
   </script>
 </head>
 
@@ -61,8 +56,11 @@
       </section>
 
 
-      <section class="tab-content projects" id="projects">
-        <h2>Projects!</h2>
+      <h2>Projects!</h2>
+      <section class="tab-content" id="accordian">
+        <ul id="projects">
+
+        </ul>
 
       </section>
 

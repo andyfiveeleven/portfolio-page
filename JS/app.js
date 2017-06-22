@@ -12,14 +12,13 @@ $('.main-nav ul li').click(function(){
 });
 
 
-$('.project-display').on('click', function(){
-  $('.active').removeClass('active');
-  $(this).addClass('active');
-  $(this).children('.plus').addClass('plus-rotate');
-});
 
-
-
-$('.active').on('click', function(){
-  $(this).removeClass('active');
+$(document).ready(function(){
+  $('#accordian h3').click(function(){
+    $('#accordian ul ul').slideUp();
+    if(!$(this).next().is(':visible'))
+    {
+      $(this).next().slideDown();
+    }
+  });
 });

@@ -75,12 +75,9 @@ main {
   line-height: 14px;
 }
 
-.projects {
-  text-align: center;
-  margin-top: 30px;
-}
 
 h2 {
+  text-align: center;
   font-size: 10vw;
   margin-bottom: 20px;
   padding-top: 20px;
@@ -88,67 +85,56 @@ h2 {
   color: #444;
 }
 
-.projects article {
-  padding: 2vw 0;
-  height: 90px;
-  background: #444;
-  color: white;
-  position: relative;
+#accordian {
+	background: #555;
+	width: 100%;
+	color: white;
+	/*Some cool shadow and glow effect*/
+	box-shadow:
+		0 5px 15px 1px rgba(0, 0, 0, 0.6),
+		0 0 200px 1px rgba(255, 255, 255, 0.5);
+}
+/*heading styles*/
+#accordian h3 {
+  text-align: center;
+	font-size: 7vw;
+	line-height: 16vw;
+	padding: 0 6vw;
+	cursor: pointer;
+	background: #333;
+	background: linear-gradient(#444, #333);
 }
 
-.projects article:nth-child(odd) {
-  background: white;
-  color: #444;
+#accordian h3:hover {
+	text-shadow: 0 0 1px rgba(255, 255, 255, 0.7);
 }
 
-.projects article span {
-  position: absolute;
-  right: 40px;
-  top: 50px;
-  width: 20px;
-  border: 1px solid white;
+#accordian li {
+	list-style-type: none;
 }
 
-.projects article:nth-child(odd) span {
-  border: 1px solid #444;
+#accordian ul ul li a {
+  text-align: center;
+	color: white;
+	text-decoration: none;
+	font-size: 7vw;
+	line-height: 10vw;
+	display: block;
+	padding: 0 15px;
+	/*transition for smooth hover animation*/
+	transition: all 0.15s;
 }
-
-.plus{
-  transform: rotate(90deg);
+/*hover effect on links*/
+#accordian ul ul li a:hover {
+	background: #4f798c;
+	border-left: 5px solid lightgreen;
 }
-
-.plus-rotate {
-  transform: rotate(0deg);
+/*Lets hide the non active LIs by default*/
+#accordian ul ul {
+	display: none;
 }
-
-.projects article h1{
-  margin: 2vw 0 1vw 0;
-  font-size: 6vw;
-}
-
-.projects article h3 {
-  font-size: 4vw;
-}
-
-.projects article h4 {
-  height: 20px;
-  font-size: 4vw;
-  padding: 10px;
-}
-
-.projects article div {
-  display: none;
-}
-
-.active {
-  width: 100%;
-  height: 250px !important;
-}
-
-.active div {
-  display: block !important;
-  outline: 1px dotted orange;
-  height:  155px;
+#accordian li.active ul {
+	display: block;
 }
 
 .template{
