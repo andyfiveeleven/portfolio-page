@@ -5,9 +5,8 @@ var rawProject = [
     name: 'Salmon Cookies',
     date: 'May 2017',
     tools: 'HTML and CSS',
-    path: 'www.gitHub.com',
     gitPath:'www.gitHub.com',
-    collabs: ['Nickypoo'],
+    collabs: 'Nickypoo',
     about:'Salmon Cookies',
     shortAbout: 'A Short description of Salmon Cookies!'
   },
@@ -15,9 +14,8 @@ var rawProject = [
     name: 'Chocolate Pizza',
     date: 'May 2017',
     tools: 'HTML, CSS and JavaScript',
-    path:'www.gitHub.com',
     gitPath:'www.gitHub.com',
-    collabs:['Nickypoo'],
+    collabs:'Nickypoo',
     about: 'Chocolate Pizza',
     shortAbout: 'A Short description of Chocolate Pizza!'
   },
@@ -27,8 +25,8 @@ var rawProject = [
     tools: 'HTML, CSS and Javascript',
     path:'www.gitHub.com',
     gitPath:'www.gitHub.com',
-    collabs:['Matty', 'Marky', 'Chrissy'],
-    about: 'User selects the liquor they have, we output a drink!',
+    collabs:'Matty Marky Chrissy',
+    about: 'User selects the liquors they have, we output a drink!',
     shortAbout: 'A Short description of Mix It Up!'
   }
 ];
