@@ -11,7 +11,12 @@ $('.main-nav ul li').click(function(){
   $('.main-nav ul').removeClass('display-nav');
 });
 
-// 
-// $('.proj-head').on('click', function(){
-//   $(this.proj-main).slideToggle();
-// });
+$(document).ready(function(){
+  $('#accordian h3').click(function(){
+    $('#accordian ul ul').slideUp();
+    if(!$(this).next().is(':visible'))
+    {
+      $(this).next().slideDown();
+    }
+  });
+});
