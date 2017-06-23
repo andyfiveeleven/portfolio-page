@@ -4,14 +4,17 @@ var projects = [];
 
 function Project (projObj) {
   this.name = projObj.name;
-  this.date = projObj.dateFin;
+
+  this.date = projObj.date;
   this.tools = projObj.tools; //array!
-  this.path = projObj.url;
-  this.gitPath = projObj.gitHub;
+  this.path = projObj.path;
+  this.gitPath = projObj.gitPath;
+
   this.collabs = projObj.collabs;
   this.about = projObj.about;
   this.shortAbout = projObj.shortAbout;
 }
+
 
 Project.all=[]
 

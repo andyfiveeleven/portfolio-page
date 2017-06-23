@@ -11,6 +11,7 @@ $('.main-nav ul li').click(function(){
   $('.main-nav ul').removeClass('display-nav');
 });
 
+
 $(document).ready(function(){
   $('#accordian h3').click(function(){
     $('#accordian ul ul').slideUp();
