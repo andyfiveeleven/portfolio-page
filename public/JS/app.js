@@ -12,7 +12,6 @@ $('.main-nav ul li').click(function(){
 });
 
 
-
 $(document).ready(function(){
   $('#accordian h3').click(function(){
     $('#accordian ul ul').slideUp();

@@ -85,6 +85,7 @@ h2 {
   color: #444;
 }
 
+
 #accordian {
 	background: #555;
 	width: 100%;
@@ -135,6 +136,7 @@ h2 {
 }
 #accordian li.active ul {
 	display: block;
+
 }
 
 .template{

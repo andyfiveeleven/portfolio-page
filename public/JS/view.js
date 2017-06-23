@@ -1,8 +1,8 @@
-var pageView = {};
+
+const pageView = {};
 
 pageView.handleMainNav = function(){
   $('.main-nav ul').on('click', '.tab', function(){
-    console.log(this);
     var $dynaNav = $(this).data('content');
     $('.tab-content').hide();
     $('#' + $dynaNav).show();
