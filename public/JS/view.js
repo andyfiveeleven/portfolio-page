@@ -10,7 +10,7 @@ pageView.handleMainNav = function(){
 };
 
 pageView.initIndexPage = function() {
-  Project.all.forEach(function(project) {
+  app.Project.all.forEach(function(project) {
     $('#projects').append(project.toHtml());
   });
 };
