@@ -30,7 +30,6 @@ var app = app || {}
     var templateRender = Handlebars.compile(template);
 
     return templateRender(this);
-
   };
 
   Project.loadAll = function(rawData) {
@@ -48,6 +47,14 @@ var app = app || {}
     $('#projects').append(p.toHtml());
   });
 
+  Project.getCollabs = () => {
+    Project.all.map((project) => project.collabs.split(' ')).reduce((count, collabs) =>{
+      return count.includes(collabs) ? null : count.push(collabs);
+    }, []);
+  };
+  //haven't implemented that into the page, but here's the function!
+
+  
   // Project.fetchAll = function() {
   //   if (localStorage.rawData){
   //     console.log('localstorage found')
