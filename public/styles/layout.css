@@ -12,14 +12,6 @@
   z-index: 1000;
 }
 
-.fixed {
-  position: fixed;
-  z-index: 1000;
-  right: 0;
-  top: 0;
-  padding-bottom: 40vw;
-}
-
 .menu {
   display: none;
   width: 100%;
