@@ -1,5 +1,6 @@
 'use strict';
 
+
 $('.icon-menu').click(function(){
   $('.main-nav ul').toggleClass('menu');
   $('.main-nav ul').toggleClass('display-nav');
@@ -12,8 +13,8 @@ $('.main-nav ul li').click(function(){
 
 
 $(document).ready(function(){
-  $('#accordian h3').click(function(){
-    $('#accordian ul ul').slideUp();
+  $('.accordian h3').click(function(){
+    $('.accordian ul ul').slideUp();
     if(!$(this).next().is(':visible'))
     {
       $(this).next().slideDown();

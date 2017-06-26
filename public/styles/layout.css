@@ -78,7 +78,7 @@ h2 {
 }
 
 
-#accordian {
+.accordian {
 	background: #555;
 	width: 100%;
 	color: white;
@@ -88,7 +88,7 @@ h2 {
 		0 0 200px 1px rgba(255, 255, 255, 0.5);
 }
 /*heading styles*/
-#accordian h3 {
+.accordian h3 {
   text-align: center;
 	font-size: 7vw;
 	line-height: 16vw;
@@ -98,15 +98,15 @@ h2 {
 	background: linear-gradient(#444, #333);
 }
 
-#accordian h3:hover {
+.accordian h3:hover {
 	text-shadow: 0 0 1px rgba(255, 255, 255, 0.7);
 }
 
-#accordian li {
+.accordian li {
 	list-style-type: none;
 }
 
-#accordian ul ul li a {
+.accordian ul ul li a {
   text-align: center;
 	color: white;
 	text-decoration: none;
@@ -118,15 +118,15 @@ h2 {
 	transition: all 0.15s;
 }
 /*hover effect on links*/
-#accordian ul ul li a:hover {
+.accordian ul ul li a:hover {
 	background: #4f798c;
 	border-left: 5px solid lightgreen;
 }
 /*Lets hide the non active LIs by default*/
-#accordian ul ul {
+.accordian ul ul {
 	display: none;
 }
-#accordian li.active ul {
+.accordian li.active ul {
 	display: block;
 
 }

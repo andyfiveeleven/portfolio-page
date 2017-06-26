@@ -46,21 +46,33 @@
     font-size: 64px;
   }
 
-  #accordian {
+  #project-pane {
+    height: 500px;
+  }
+
+  #projects{
+    text-align: center;
+  }
+
+  .accordian {
     background: none;
     box-shadow: none;
   }
 
-  #accordian .indv-proj {
+  .accordian .indv-proj {
     display: inline-block;
-    width: 300px;
+    width: 250px;
     margin: 5px;
-    height: 100px;
+    height: 250px;
+    font-size: 50px;
   }
 
   .indv-proj h3{
-    font-size: 40px !important;
-    line-height: 40px;
+    height: 250px;
+    padding-left: 0px;
+    padding-right: 0px;
+    line-height: 60px;
+    font-size: 60px;
   }
 
   .main-skills li {
