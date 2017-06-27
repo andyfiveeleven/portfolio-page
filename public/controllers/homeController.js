@@ -3,8 +3,10 @@ var app = app || {};
 (function(module) {
   const homeController = {};
 
-  // DONE: Define a function that hides all main section elements, and then reveals just the #about section:
+
   homeController.init = function(){
+    //app.Article.fetchAll(app.articleView.initIndexPage); MIGHT NEED THIS!
+
     $('main > section').show();
   };
 
