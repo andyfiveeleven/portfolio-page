@@ -106,30 +106,49 @@ h2 {
 	list-style-type: none;
 }
 
+
+.accordian ul li ul {
+  height: 0px
+  -webkit-transition: all 1s linear;
+  -moz-transition: all 1s linear;
+  -o-transition: all 1s linear;
+  transition: all 1s linear;
+}
+
+
 .accordian ul ul li a {
   text-align: center;
 	color: white;
 	text-decoration: none;
 	font-size: 7vw;
 	line-height: 10vw;
-	display: block;
+	display: none;
 	padding: 0 15px;
 	/*transition for smooth hover animation*/
 	transition: all 0.15s;
 }
+
+.active {
+  height: 40vw;
+}
+
+.active li a {
+  display: block !important;
+}
+
 /*hover effect on links*/
 .accordian ul ul li a:hover {
 	background: #4f798c;
 	border-left: 5px solid lightgreen;
 }
 /*Lets hide the non active LIs by default*/
-.accordian ul ul {
+/*.accordian ul ul {
 	display: none;
 }
 .accordian li.active ul {
 	display: block;
 
-}
+}*/
 
 .template{
   display: none;
