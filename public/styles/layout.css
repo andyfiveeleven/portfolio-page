@@ -108,11 +108,11 @@ h2 {
 
 
 .accordian ul li ul {
-  height: 0px
-  -webkit-transition: all 1s linear;
-  -moz-transition: all 1s linear;
-  -o-transition: all 1s linear;
-  transition: all 1s linear;
+  height: none;
+  -webkit-transition: all .35s linear;
+  -moz-transition: all .35s linear;
+  -o-transition: all .35s linear;
+  transition: all .35s linear;
 }
 
 
@@ -120,20 +120,24 @@ h2 {
   text-align: center;
 	color: white;
 	text-decoration: none;
-	font-size: 7vw;
-	line-height: 10vw;
-	display: none;
+	font-size: 0vw;
+	line-height: 0vw;
 	padding: 0 15px;
+  display: block;
 	/*transition for smooth hover animation*/
-	transition: all 0.15s;
+  -webkit-transition: all .35s linear;
+  -moz-transition: all .35s linear;
+  -o-transition: all .35s linear;
+  transition: all .35s linear;
 }
 
 .active {
-  height: 40vw;
+  height: inherit !important;
 }
 
 .active li a {
-  display: block !important;
+  font-size: 7vw !important;
+	line-height: 10vw !important;
 }
 
 /*hover effect on links*/
