@@ -54,7 +54,6 @@ var app = app || {}
   };
   //haven't implemented that into the page, but here's the function!
 
-  
   // Project.fetchAll = function() {
   //   if (localStorage.rawData){
   //     console.log('localstorage found')
