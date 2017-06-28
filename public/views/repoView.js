@@ -2,7 +2,7 @@
 var app = app || {};
 
 (function(module){
-  const repoView = {}
+  const repoView = {};
 
   const ui = function(){
     let $about = $('#about');
@@ -12,10 +12,11 @@ var app = app || {};
 
   let render = Handlebars.compile($('#repo-template').html());
 
-  repoView.init = function (){
+  repoView.index = function (){
     ui();
-
+    console.log('repoview initted');
     $('#about ul').append(
-      app.repos.with('name').map(render) 
-  }
-})
+      app.repos.with('name').map(render));
+  };
+  module.repoView = repoView;
+})(app);

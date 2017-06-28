@@ -6,8 +6,9 @@ var app = app || {};
   aboutController.init = function(){
     $('main > section').hide();
     $('#about').show();
+    console.log('partial init');
 
-    app.repos.requestRepos(app.repoView.init);
+    app.repos.requestRepos(app.repoView.index);
   };
 
 
