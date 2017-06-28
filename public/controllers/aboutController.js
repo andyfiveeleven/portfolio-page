@@ -8,7 +8,7 @@ var app = app || {};
     $('#about').show();
     console.log('partial init');
 
-    // app.repos.requestRepos(app.repoView.index);
+    app.repos.requestRepos(app.repoView.index);
   };
 
 
