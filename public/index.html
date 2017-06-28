@@ -21,13 +21,20 @@
         <li><a href="#">{{date}}</a></li>
         <li><a href="#">{{collabs}}</a></li>
         <li><a href="#">{{about}}</a></li>
-        <li><a href="#">{{gitPath}}</a></li>
+        <li>{{{gitPath}}}</li>
         <li><a href="#">{{path}}</a></li>
       </ul>
     </li>
   </script>
-  <script id="collabs-template" type="text/x-handlebars-template">
-
+  <script id="repo-template" type="text/x-handlebars-template">
+    <li>
+      <a href="{{html_url}}" target="_blank">
+        <h3>{{name}}</h3>
+      </a>
+      <p>Language: {{language}}</p>
+      <p>Created: {{created_at}}</p>
+      <p>Last updated {{updated_at}}</p>
+    </li>
   </script>
 </head>
 
@@ -87,6 +94,9 @@
       <section class="tab-content main-about" id="about">
         <h2>About</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <ul>
+
+        </ul>
       </section>
     </main>
 
@@ -99,15 +109,20 @@
     <script type="text/javascript" src="vendors/jquery.js"></script>
     <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
-    <script type="text/javascript" src="JS/source-data.js"></script>
-    <script type="text/javascript" src="JS/projects.js"></script>
-    <script type="text/javascript" src="JS/view.js"></script>
-    <script type="text/javascript" src="JS/app.js"></script>
+    <script type="text/javascript" src="data/source-data.js"></script>
+    <script type="text/javascript" src="models/projects.js"></script>
+    <script type="text/javascript" src="models/githubToken.js"></script>
+    <script type="text/javascript" src="models/repo.js"></script>
+    <script type="text/javascript" src="views/view.js"></script>
+    <script type="text/javascript" src="views/app.js"></script>
+    <script type="text/javascript" src="views/repoView.js"></script>
     <script type="text/javascript" src="controllers/aboutController.js"></script>
     <script type="text/javascript" src="controllers/skillsController.js"></script>
     <script type="text/javascript" src="controllers/homeController.js"></script>
     <script type="text/javascript" src="controllers/projectController.js"></script>
     <script type="text/javascript" src="controllers/routes.js"></script>
+
+
 
 
 
