@@ -12,7 +12,7 @@ var app = app || {};
     $.ajax({
       url:'https://api.github.com/user/repos',
       method:'GET',
-      headers:{'Authorization': 'token ' + process.env.githubToken}
+      headers:{'Authorization': `token ${process.env.GITHUB_TOKEN}`}
     })
       .then(function(data){
         repos.all = data;
