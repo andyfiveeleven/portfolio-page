@@ -5,6 +5,7 @@ var app = app || {};
 
 
   projectController.init = function(){
+    app.Project.fetchAll(app.projectView.initIndexPage);
     $('main > section').hide();
     $('#project-pane').show();
   };
